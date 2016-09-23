@@ -1,0 +1,49 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Агар Россия</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+    <div id="gameAreaWrapper">
+        <div id="status"><span class="title">Топ</span></div>
+        <div class="chatbox" id="chatbox">
+            <ul id="chatList" class="chat-list"></ul>
+            <input id="chatInput" type="text" class="chat-input" placeholder="Chat here..." />
+        </div>
+        <canvas tabindex="1" id="cvs"></canvas>
+    </div>
+    <div id="startMenuWrapper">
+        <div id="startMenu">
+            <p>Агар Россия</p>
+            <input type="text" tabindex="0" autofocus placeholder="Ваш Ник" id="playerNameInput" />
+            <b class="input-error">Ваш ник должен быть на Английском!</b>
+            <br />
+            <button id="startButton">Играть</button>
+            <button id="settingsButton">Настройки</button>
+            <br />
+            <div id="settings">
+                <h3>Настройки</h3>
+                <ul>
+                    <label><input id="visBord" type="checkbox">Показывать края</label>
+                    <label><input id="showMass" type="checkbox">Показать массу</label>
+                    <br />
+                    <label><input id="continuity" type="checkbox">Непонятно зачем галочка=)</label>
+                </ul>
+            </div>
+            <div id="instructions">
+                <h3>Управление</h3>
+                <ul>
+                    <li>Двигайте шар с помощью мыши</li>
+                    <li>Увеличивайте свою массу при помощи Еды</li>
+                    <li>Вы можете быть съедены игроками с большей массой</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
