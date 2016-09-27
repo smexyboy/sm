@@ -781,7 +781,7 @@ function gameLoop() {
         graph.textAlign = 'center';
         graph.fillStyle = '#FFFFFF';
         graph.font = 'bold 30px sans-serif';
-        graph.fillText('You died!', screenWidth / 2, screenHeight / 2);
+        graph.fillText('Печалька((. Тебя Сожрали в следующий раз будь осторожнее!', screenWidth / 2, screenHeight / 2);
     }
     else if (!disconnected) {
         if (gameStart) {
